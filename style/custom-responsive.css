@@ -1,0 +1,19 @@
+
+
+
+
+/* news And latest talks section */
+@media (max-width: 767px) {
+    #news-latest .colsp {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+}
+
+
+/* banner */
+@media (max-width: 700px) {
+    #info .info-pic {
+        margin-top: -50px !important;
+    }
+}

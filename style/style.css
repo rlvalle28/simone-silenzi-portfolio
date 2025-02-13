@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../assets/fonts/Poppins-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    transition: background 0.3s, color 0.3s;
+    background-color: white;
+    color: black;
+    font-family: 'Poppins';
+}
+
+
+/* switch button */
+
+.switch {
+    position: relative;
+    width: 60px;
+    height: 30px;
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    transition: 0.4s;
+    border-radius: 30px;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+input:checked + .slider {
+    background-color: white;
+    border: 1px solid black;
+}
+input:checked + .slider:before {
+    background-color: black;
+    transform: translateX(30px);
+}
+
+/* all buttons */
+
+button a {
+    text-decoration: none;
+    color: #000;
+}
+
+button:hover a {
+    color: #000;
+}
+
+button:hover {
+    background: #fff !important;
+}
+
+
+/* Banner section */
+
+#banner {
+    background: url('../assets/image/1735474050406.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#banner ul li {
+    list-style: none;
+}
+
+#banner a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#banner nav {
+    background: #0A0A0A;
+    border-right: 1px solid #fff;
+}
+
+#banner i {
+    color: #fff;
+    font-size: 20px;
+}
+
+
+
+
+/* info section */
+
+#info .image-wrapper {
+    width: auto;
+    height: auto;
+    padding: 10px;
+    background-color: #BBDEFB;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+#info .image-wrapper img {
+    width: 20px;
+    height: auto;
+    border-radius: 0;
+}
+
+/* biography section */
+
+#biography .columns,
+#featured .columns {
+    background: #F8F8F8;
+    border-radius: 8px;
+}
+
+#biography .blue-bullet::marker {
+    color: #005194;
+}
+
+#biography li.list::marker {
+    content: url('../assets/image/education-cap-svgrepo-com.svg') !important;
+}
+
+#biography .list {
+    padding-left: 10px;
+}
+
+/* news And latest talks section */
+
+#news-latest h3 {
+    position: relative;
+}
+
+
+#news-latest h6,
+#featured h6,
+#project  h6,
+#blog h6 {
+    font-size: 14px;
+    color: #5E5E5E;
+}
+
+
+
+/* featured section */
+
+#featured h3 {
+    position: relative;
+}
+
+
+#featured .project-list span {
+    background: #BBDEFB;
+    padding: 5px 10px;
+    color: #000;
+    font-size: 14px;
+}
+
+#featured .project-list a {
+    text-decoration: none;
+}
+
+#featured #hideShow {
+    display: none;
+}
+
+
+/* blog posts section */
+
+#blog .posts {
+    background: #F8F8F8;
+    border-radius: 8px;
+}
+
+/* sponsors of my research section */
+
+#sponsors img {
+    width: auto;
+    height: 80px;
+    aspect-ratio: auto;
+}
+
+/* footer */
+
+#footer ul li {
+    list-style: none;
+}
+
+#footer ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+#footer .image-wrap {
+    width: auto;
+    height: auto;
+    padding: 10px;
+    background-color: #BBDEFB;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+#footer .image-wrap img {
+    width: 20px;
+    height: auto;
+    border-radius: 0;
+}
+
+#footer span {
+    color: #fff;
+    font-size: 12px;
+}
