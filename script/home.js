@@ -1,19 +1,21 @@
 
 
-// script for all pages except the homepage
+// I'll separate this script because applying it to other pages breaks the dark mode.
+// due to added container hide/show
 
 document.addEventListener("DOMContentLoaded", () => {
     const toggle = document.getElementById("toggle");
     const body = document.body;
+    const hideShow = document.getElementById("hideShow"); // Added container
     const paragraphs = document.querySelectorAll("p");
-    const h2 = document.querySelectorAll("h2");
     const h3 = document.querySelectorAll("h3");
-    const h5 = document.querySelectorAll("h5");
     const h6 = document.querySelectorAll("h6");
+    const divContainer = document.querySelectorAll("#divContainer");
     const firstfooter = document.querySelectorAll("#ffooter");
     const footerA = document.querySelectorAll(".footer-a");
     const footerIMG = document.querySelectorAll(".IMG");
     const secondfooter = document.querySelectorAll("#sfooter");
+    const listItems = document.querySelectorAll("li");
     const button = document.querySelectorAll(".btn-text");
     const btn = document.querySelectorAll(".btn-outline-dark");
 
@@ -22,16 +24,23 @@ document.addEventListener("DOMContentLoaded", () => {
         if (toggle.checked) {
             body.style.backgroundColor = "#151623";
             body.style.color = "#fff";
+            hideShow.style.display = "block"; // Show container
 
-            h2.forEach(h => h.style.color = "#000");
-
-            h3.forEach(h => h.style.color = "#000");
-
-            h5.forEach(h => h.style.color = "#000");
+            h3.forEach(h => h.style.color = "#fff");
 
             h6.forEach(h => h.style.color = "#fff");
             
             paragraphs.forEach(p => p.style.color = "#fff");
+
+            divContainer.forEach(div => {
+                div.style.backgroundColor = "#272935";
+                div.style.color = "#fff";
+            
+            });
+            
+
+            listItems.forEach(li => li.style.color = "#fff");
+            
 
             button.forEach(button => {
                 button.style.color = "#fff";
@@ -67,14 +76,11 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
             body.style.backgroundColor = "white";
             body.style.color = "black";
+            hideShow.style.display = "none"; // Hide container
 
-            h2.forEach(h => h.style.color = "#000");
+            h3.forEach(h => h.style.color = "black");
 
-            h3.forEach(h => h.style.color = "#000");
-
-            h5.forEach(h => h.style.color = "#000");
-
-            h6.forEach(h => h.style.color = "#000");
+            h6.forEach(h => h.style.color = "#5E5E5E");
             
             
             paragraphs.forEach(p => p.style.color = "black");
@@ -87,6 +93,13 @@ document.addEventListener("DOMContentLoaded", () => {
                 btn.style.border = "1px solid #000";
             });
             
+            
+            listItems.forEach(li => li.style.color = "black");
+
+            divContainer.forEach(div => {
+                div.style.backgroundColor = "#F8F8F8";
+                div.style.color = "black";
+            });
 
             firstfooter.forEach(div => {
                 div.style.backgroundColor = "#F8F8F8";

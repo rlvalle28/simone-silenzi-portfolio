@@ -1,6 +1,9 @@
 
 
-// script for all pages except the homepage
+
+
+// I'll separate this script because the font colors and container are different in dark mode.
+
 
 document.addEventListener("DOMContentLoaded", () => {
     const toggle = document.getElementById("toggle");
@@ -10,12 +13,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const h3 = document.querySelectorAll("h3");
     const h5 = document.querySelectorAll("h5");
     const h6 = document.querySelectorAll("h6");
+    const category = document.querySelectorAll("select");
     const firstfooter = document.querySelectorAll("#ffooter");
     const footerA = document.querySelectorAll(".footer-a");
     const footerIMG = document.querySelectorAll(".IMG");
     const secondfooter = document.querySelectorAll("#sfooter");
     const button = document.querySelectorAll(".btn-text");
     const btn = document.querySelectorAll(".btn-outline-dark");
+    const cardRow = document.querySelectorAll("#card-row");
 
 
     toggle.addEventListener("change", () => {
@@ -29,9 +34,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
             h5.forEach(h => h.style.color = "#000");
 
-            h6.forEach(h => h.style.color = "#fff");
+            h6.forEach(h => h.style.color = "#000");
+
+            category.forEach(select => {
+                select.style.backgroundColor = "#151623";
+                select.style.color = "#fff";
+            });
             
             paragraphs.forEach(p => p.style.color = "#fff");
+
+           
+
+            cardRow.forEach(div => {
+                div.style.backgroundColor = "#fff";
+                div.style.color = "#000";
+            
+            });
+            
 
             button.forEach(button => {
                 button.style.color = "#fff";
@@ -76,8 +95,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
             h6.forEach(h => h.style.color = "#000");
             
-            
             paragraphs.forEach(p => p.style.color = "black");
+
+            category.forEach(select => {
+                select.style.backgroundColor = "#fff";
+                select.style.color = "#000";
+            });
 
             button.forEach(button => {
                 button.style.color = "#000";
@@ -87,6 +110,17 @@ document.addEventListener("DOMContentLoaded", () => {
                 btn.style.border = "1px solid #000";
             });
             
+
+            divContainer.forEach(div => {
+                div.style.backgroundColor = "#F8F8F8";
+                div.style.color = "black";
+            });
+
+            cardRow.forEach(div => {
+                div.style.backgroundColor = "#F8F8F8";
+                div.style.color = "#000";
+            
+            });
 
             firstfooter.forEach(div => {
                 div.style.backgroundColor = "#F8F8F8";
