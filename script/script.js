@@ -5,11 +5,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const paragraphs = document.querySelectorAll("p");
     const h3 = document.querySelectorAll("h3");
     const h6 = document.querySelectorAll("h6");
-    const listItemsBody = document.querySelectorAll(".columns");
-    const footer = document.querySelectorAll(".columnss");
+    const divContainer = document.querySelectorAll("#divContainer");
+    const firstfooter = document.querySelectorAll("#ffooter");
     const footerA = document.querySelectorAll(".footer-a");
     const footerIMG = document.querySelectorAll(".IMG");
-    const botfooter = document.querySelectorAll(".columnsss");
+    const secondfooter = document.querySelectorAll("#sfooter");
     const listItems = document.querySelectorAll("li");
     const button = document.querySelectorAll(".btn-text");
     const btn = document.querySelectorAll(".btn-outline-dark");
@@ -26,6 +26,12 @@ document.addEventListener("DOMContentLoaded", () => {
             h6.forEach(h => h.style.color = "#fff");
             
             paragraphs.forEach(p => p.style.color = "#fff");
+
+            divContainer.forEach(div => {
+                div.style.backgroundColor = "#272935";
+                div.style.color = "#fff";
+            
+            });
             
 
             listItems.forEach(li => li.style.color = "#fff");
@@ -39,21 +45,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 btn.style.border = "1px solid #fff";
             });
 
-            
-
-
-            listItemsBody.forEach(div => {
-                div.style.backgroundColor = "#272935";
-                div.style.color = "#fff";
-            
-            });
-
-            footer.forEach(div => {
-                div.style.backgroundColor = "#272935";
-                div.style.color = "#fff";
-            
-            });
-
             footerA.forEach(div => {
                 div.style.color = "#fff";
             
@@ -64,7 +55,14 @@ document.addEventListener("DOMContentLoaded", () => {
             
             });
 
-            botfooter.forEach(div => {
+            
+            firstfooter.forEach(div => {
+                div.style.backgroundColor = "#272935";
+                div.style.color = "#fff";
+            
+            });
+
+            secondfooter.forEach(div => {
                 div.style.backgroundColor = "#272935";
                 div.style.color = "#fff";
             
@@ -93,12 +91,12 @@ document.addEventListener("DOMContentLoaded", () => {
             
             listItems.forEach(li => li.style.color = "black");
 
-            listItemsBody.forEach(div => {
+            divContainer.forEach(div => {
                 div.style.backgroundColor = "#F8F8F8";
                 div.style.color = "black";
             });
 
-            footer.forEach(div => {
+            firstfooter.forEach(div => {
                 div.style.backgroundColor = "#F8F8F8";
                 div.style.color = "#fff";
             
@@ -114,7 +112,7 @@ document.addEventListener("DOMContentLoaded", () => {
             
             });
 
-            botfooter.forEach(div => {
+            secondfooter.forEach(div => {
                 div.style.backgroundColor = "#000";
                 div.style.color = "#fff";
             

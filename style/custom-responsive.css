@@ -17,3 +17,19 @@
         margin-top: -50px !important;
     }
 }
+
+
+/* footer */
+
+@media (max-width: 1199px) {
+    #footer ul {
+        justify-content: start !important;
+        gap: 10px !important;
+    }
+
+    #footer nav {
+        padding: 20px 0;
+    }
+}
+
+

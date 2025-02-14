@@ -129,8 +129,7 @@ button:hover {
 
 /* biography section */
 
-#biography .columns,
-#featured .columns {
+#biography #divContainer {
     background: #F8F8F8;
     border-radius: 8px;
 }
@@ -165,6 +164,11 @@ button:hover {
 
 
 /* featured section */
+
+#featured .div-container {
+    background: #F8F8F8;
+    border-radius: 8px;
+}
 
 #featured h3 {
     position: relative;
