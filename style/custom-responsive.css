@@ -27,6 +27,18 @@
 
 @media (max-width: 1199px) {
 
+    /* banner
+    removed the sticky header when 1024px and below
+    */
+
+    #banner nav {
+        position: static;
+    }
+
+    #banner .col-6 {
+        height: auto;
+    }
+
 
     /* blog page */
     #card-column img,

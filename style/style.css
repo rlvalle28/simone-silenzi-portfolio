@@ -89,6 +89,16 @@ button:hover {
     background-size: cover;
 }
 
+#banner nav {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+#banner .col-6 {
+    height: 40vh;
+}
+
 #banner ul li {
     list-style: none;
 }
