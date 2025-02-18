@@ -80,6 +80,75 @@ button:hover {
 
 /* HOMEPAGE */
 
+/* sticky header */
+
+#sticky {
+    position: fixed;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    transition: top 0.3s ease-in-out;
+    z-index: 999;
+}
+
+#sticky.show {
+    top: 0;
+}
+
+#sticky ul li {
+    list-style: none;
+}
+
+#sticky a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#sticky i {
+    color: #fff;
+    font-size: 20px;
+}
+
+/* for sticky menu toggle */
+#sticky .menu-toggle {
+    position: absolute;
+    top: 30%;
+    left: 120px;
+    cursor: pointer;
+    z-index: 100;
+}
+#sticky .bar {
+    display: block;
+    width: 25px;
+    height: 2px;
+    margin: 6px auto;
+    background-color: #fff;
+    transition: 0.4s;
+}
+#sticky .nav {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100vh;
+    background: #333;
+    padding-top: 60px;
+    transition: left 0.3s ease;
+}
+#sticky .nav a {
+    display: block;
+    color: white;
+    padding: 0;
+    text-decoration: none;
+    transition: 0.3s;
+}
+#sticky .nav a:hover {
+    background: #575757;
+}
+#sticky .nav.active {
+    left: 0;
+}
+
 /* Banner section */
 
 #banner {
@@ -87,16 +156,6 @@ button:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-#banner nav {
-    position: fixed;
-    top: 0;
-    z-index: 999;
-}
-
-#banner .col-6 {
-    height: 40vh;
 }
 
 #banner ul li {
@@ -268,6 +327,10 @@ button:hover {
 }
 
 #blog-page #card-row a {
+    color: #000 !important;
+}
+
+#blog-page i.bi.bi-arrow-right-circle:before {
     color: #000 !important;
 }
 

@@ -27,17 +27,12 @@
 
 @media (max-width: 1199px) {
 
-    /* banner
-    removed the sticky header when 1024px and below
-    */
+    /* sticky header */
 
-    #banner nav {
-        position: static;
+    #sticky .menu-toggle {
+        left: 20px;
     }
 
-    #banner .col-6 {
-        height: auto;
-    }
 
 
     /* blog page */
