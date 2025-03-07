@@ -82,17 +82,15 @@ button:hover {
 
 /* sticky header */
 
+
+/* for sticky menu toggle */
 #sticky {
     position: fixed;
-    top: -100px;
     left: 0;
     width: 100%;
     transition: top 0.3s ease-in-out;
     z-index: 999;
-}
-
-#sticky.show {
-    top: 0;
+    display: none !important;
 }
 
 #sticky ul li {
@@ -109,11 +107,8 @@ button:hover {
     font-size: 20px;
 }
 
-/* for sticky menu toggle */
+
 #sticky .menu-toggle {
-    position: absolute;
-    top: 30%;
-    left: 120px;
     cursor: pointer;
     z-index: 100;
 }
@@ -170,6 +165,7 @@ button:hover {
 #banner nav {
     background: #0A0A0A;
     border-right: 1px solid #fff;
+    position: fixed;
 }
 
 #banner i {
@@ -177,7 +173,9 @@ button:hover {
     font-size: 20px;
 }
 
-
+#banner-col {
+    height: 350px;
+}
 
 
 /* info section */

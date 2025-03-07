@@ -1,4 +1,14 @@
+@media (max-width: 1025px) {
+    #banner nav,
+    #banner i,
+    #banner-col .slider {
+        display: none;
+    }
 
+    #sticky {
+        display: flex !important;
+    }
+}
 
 
 
